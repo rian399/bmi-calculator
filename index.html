@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator By Dilesin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <div class="gender-option">
+            <div class="gender" id="male">
+                <img src="https://cdn-icons-png.freepik.com/512/0/93.png" alt="male">
+
+                <h3>Laki Laki</h3>
+            </div>
+            <div class="gender" id="female">
+                <img src="https://cdn-icons-png.flaticon.com/512/65/65581.png" alt="female">
+
+                <h3>Perempuan</h3>
+            </div>
+        </div>
+
+        <form id="bmi-form">
+            <input type="hidden" name="gender" id="gender">
+
+            <div class="form-group">
+                <label for="height"> Tinggi Badan (cm)</label>
+                <input type="number" name="height" id="height" placeholder="Tinggi Badan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="weight"> Berat Badan (kg)</label>
+                <input type="number" name="weight" id="weight" placeholder="Berat Badan" required>
+            </div>
+
+            <button type="submit" id="submit">Hitung BMI</button>
+        </form>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
